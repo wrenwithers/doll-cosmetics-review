@@ -213,13 +213,12 @@ cursor: pointer; cursor: hand;
 }
 
 .footer-content ul {
-  /*position: absolute;*/
+  width: 100vw;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   list-style-type: none;
-  /*justify-content: flex-start;*/
 }
 
 .footer-content li {
@@ -364,4 +363,145 @@ img[rel="img6"]:hover {
 
 @media only screen and (max-width:965px)
   {
-    
+    .container {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .container > * {
+    flex: 1 1 auto;
+  }
+
+  #header-content {
+    position: relative;
+    flex-wrap: wrap;
+    width: 100vw;
+    background: pink;
+    height: 10vh;
+  }
+
+  #header-content ul {
+    list-style-type: none;
+    justify-content: center;
+    padding-left: 8vw;
+  }
+
+  #header-content li {
+    display: inline-flex;
+    justify-content: center;
+    padding:1vw;
+    margin: 2vw;
+  }
+
+
+  #header-content li:first-child {
+    font-size: 0px;
+    width: 0vw;
+    cursor: default;
+  }
+
+  #mid1 {
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0;
+      width: 0vw;
+      margin-top: auto;
+    }
+
+    h3 {
+      font-size: 0px;
+      width: 0vw;
+      font-family: Courier;
+      margin-left:0vw;
+    }
+
+  #mid2 {
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #mid2 h1 {
+      font-size: 45px;
+      font-family: Courier;
+      width: 60vw;
+    }
+
+  #mid3 {
+      position: relative;
+      width: 20vw;
+      display: inline-flex;
+      margin-left: 40vw;
+      margin-right: 40vw;
+      align-items: flex-end;
+    }
+
+  #button {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #D910E8);
+  background-image: -moz-linear-gradient(top, #3498db, #D910E8);
+  background-image: -ms-linear-gradient(top, #3498db, #D910E8);
+  background-image: -o-linear-gradient(top, #3498db, #D910E8);
+  background-image: linear-gradient(to bottom, #3498db, #D910E8);
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 21px;
+  padding: 8px 30px 8px 30px;
+  text-decoration: none;
+  }
+
+  #button:hover {
+  background: #FFFFFF;
+  background-image: -webkit-linear-gradient(top, #FFFFFF, #D910E8);
+  background-image: -moz-linear-gradient(top, #FFFFFF, #D910E8);
+  background-image: -ms-linear-gradient(top, #FFFFFF, #D910E8);
+  background-image: -o-linear-gradient(top, #FFFFFF, #D910E8);
+  background-image: linear-gradient(to bottom, #FFFFFF, #D910E8);
+  text-decoration: none;
+  cursor: pointer; cursor: hand;
+  }
+
+  #footer {
+      order: 1;
+      position: relative;
+      display: flex;
+      width: 100vw;
+      display: inline-flex;
+      align-items: flex-end;
+  }
+
+  .footer-content {
+    background: pink;
+    width: 100vw;
+    height: 8vh;
+    padding: 3vh;
+  }
+
+  .footer-content ul {
+    width: 0vw;
+    font-size: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    list-style-type: none;
+  }
+
+  .footer-content li {
+    font-family: Courier;
+    font-weight: bold;
+    color: #D910E8;
+    display: inline-flex;
+    padding: 0 2.5vw;
+  }
